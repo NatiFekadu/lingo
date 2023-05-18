@@ -10,7 +10,7 @@ const Layout = ({children}) => {
         <title>Lingo</title>
       </Head>
       <header>
-        <Navbar/>
+        <Navbar as="my-navbar"/>
       </header>
       <main className='main-container'>
            {children}
