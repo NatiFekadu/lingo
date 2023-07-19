@@ -1,7 +1,5 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState} from 'react';
 import { toast } from 'react-hot-toast';
-import { set } from 'sanity';
-import product from '../lingo/schemas/product';
 
 const Context = createContext();
 
