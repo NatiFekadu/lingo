@@ -17,6 +17,7 @@ const FooterBanner = ({
     desc,
   },
 }) => {
+  const src =urlFor(image).url();
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">
@@ -34,7 +35,7 @@ const FooterBanner = ({
             <button type="button">{buttonText}</button>
           </Link>
         </div>
-        <img alt='Footer image' src={urlFor(image)} className="footer-banner-image" />
+        <Image alt='Footer image' loader={() => src} src={src} width={1} height={1} className="footer-banner-image" />
       </div>
     </div>
   );

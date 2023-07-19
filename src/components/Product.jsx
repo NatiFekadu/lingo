@@ -4,16 +4,16 @@ import { urlFor } from '../../lib/client';
 import Image from 'next/image';
 
 const Product = ({ product: { image, name, slug, price } }) => {
+  const src = urlFor(image && image[0]).url();
   return (
     <div>
       <Link href={`/product/${slug.current}`}>
         <div className="product-card">
-          <img
+          <Image
             alt="product image"
             className="product-image"
-          
-            src={urlFor(image && image[0])}
-           
+            loader={() => src}
+            src={src}
             width={250}
             height={250}
           />
