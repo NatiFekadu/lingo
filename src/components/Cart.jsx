@@ -70,7 +70,7 @@ const Cart = () => {
             cartItems.map((item, i) => (
               <div className="product" key={item._id}>
                 <Image alt='product Image'
-                  srcset={urlFor(item?.image[0])}
+                  srcSet={urlFor(item?.image[0])}
                   className="cart-product-image"
                 />
                 <div className="item-desc">

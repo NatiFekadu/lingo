@@ -10,7 +10,7 @@ const HeroBanner = ({heroBanner :{product,image,smallText,midText,largeText1,but
         <p className="beats-solo">{smallText}</p>
             <h3>{midText}</h3>
             <h1>{largeText1}</h1>
-            <Image srcset={urlFor(image)} alt='Product Image' className='hero-banner-image'/>
+            <img src={urlFor(image)} alt='Product Image' className='hero-banner-image'/>
           <div>
             <Link href={`/product/${product}`}>
               <button type='button'>{buttonText}</button>
