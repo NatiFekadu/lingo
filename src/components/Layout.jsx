@@ -1,23 +1,20 @@
 import React from 'react';
 import Head from 'next/head';
 import { Footer } from '.';
-import { Navbar } from '.';
+import { Navbar } from './index';
 
-
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Head>
         <title>Lingo</title>
       </Head>
       <header>
-        <Navbar as="my-navbar"/>
+        <Navbar as="my-navbar" />
       </header>
-      <main className='main-container'>
-           {children}
-      </main>
+      <main className="main-container">{children}</main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );
