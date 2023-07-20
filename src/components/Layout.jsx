@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import { Footer } from '.';
-//import Navbar from './Navbar';
+
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
@@ -9,17 +10,17 @@ const Layout = ({ children }) => {
       <Head>
         <title>Lingo</title>
       </Head>
-      {/** 
       <header>
-        <Navbar as="my-navbar" />
+        <Navbar />
       </header>
-      */}
-      <main className="main-container">{children}</main>
+      <main className="main-container">
+        {children}
+      </main>
       <footer>
         <Footer />
       </footer>
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
