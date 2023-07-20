@@ -13,14 +13,12 @@ const Layout = ({ children }) => {
       <header>
         <Navbar />
       </header>
-      <main className="main-container">
-        {children}
-      </main>
+      <main className="main-container">{children}</main>
       <footer>
         <Footer />
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
